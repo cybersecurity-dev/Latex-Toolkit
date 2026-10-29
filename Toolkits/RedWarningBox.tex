@@ -2,11 +2,32 @@
 \usepackage{xcolor} 
 \usepackage{fontawesome5}
 
+\newtcolorbox{warningbox}[1][Attention]{ 
+    enhanced, 
+    breakable, 
+    colback=red!8, 
+    colframe=red!75!black, 
+    coltitle=white, 
+    fonttitle=\bfseries, 
+    title={\faExclamationTriangle\quad #1}, 
+    boxed title style={ 
+        colback=red!75!black, 
+        colframe=red!75!black 
+    }, 
+    boxrule=0.8pt, 
+    arc=1.5mm, 
+    left=2.5mm, 
+    right=2.5mm, 
+    top=2mm, 
+    bottom=2mm, 
+    before skip=6pt, 
+    after skip=6pt 
+}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{attentionbox}
+\begin{warningbox}
 
 Qs: \textit{Questions}
 
@@ -15,4 +36,4 @@ Qs: \textit{Questions}
   \item Q2...
 \end{itemize}
 
-\end{attentionbox}
+\end{warningbox}
